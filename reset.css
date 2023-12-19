@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --card-bg: #ffffff;
+    --item-border: #f8f7fc;
+    --body-bg: #f9eeff;
+    --text-light: #aba4ac;
+    --text-hover: hsl(292, 16%, 49%);
+    --text-heading: hsl(292, 42%, 14%);
+}
+
+html {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-heading);
+}
+
+/*
+    Since I started learning about web design, typography, colors etc.
+    I used a body base 15px "Minor Triad" typescale
+
+    I got my typography scales from the following website:
+    
+    https://typescale.com/
+*/
+
+h1 {
+    font-weight: 700;
+    font-size: 44.79px;
+}
+
+h2 {
+    font-size: 37.32px;
+}
+
+h3 {
+    font-size: 31.1px;
+}
+
+h4 {
+    font-size: 25.92px;
+}
+
+h5 {
+    font-size: 21.6px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
