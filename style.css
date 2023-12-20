@@ -1,12 +1,13 @@
 body {
     background: var(--body-bg);
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0 32px;
+    align-items: start;
+    padding: 120px 32px;
 }
 
 .bg-pattern-desktop {
@@ -33,20 +34,80 @@ main {
     z-index: 1;
     background: var(--card-bg);
     border-radius: 8px;
-    border: 1px red solid;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 480px;
 }
 
-@media (min-width: 481px) {
-    body {
-        background: red;
-    }
+main .faq {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
 }
+
+main .faq h1 {
+    display: none;
+}
+
+main .items {
+    display: flex;
+    flex-direction: column;
+}
+
+main .items .item {
+    border-bottom: 2px solid var(--item-border);
+    padding: 24px 0px;
+}
+
+main .items .item:first-child {
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+
+main .items .item:first-child .item-header div svg:first-child {
+    display: block;
+}
+
+main .items .item:first-child .item-header div svg:last-child {
+    display: none;
+}
+
+main .items .item:first-child .item-body {
+    display: block;
+}
+
+main .items .item:last-child {
+    border-bottom: none;
+}
+
+main .items .item .item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .items .item .item-header div {
+    display: flex;
+}
+
+main .items .item .item-header svg {
+    cursor: pointer;
+}
+
+main .items .item .item-header div svg:first-child {
+    display: none;
+}
+
+main .items .item .item-body {
+    padding-top: 24px;
+    display: none;
+}
+
+/* MEDIA QUERIES | START */
 
 @media (min-width: 781px) {
-    body {
-        background: orange;
-    }
-
     .bg-pattern-mobile {
         display: none;
     }
@@ -68,11 +129,17 @@ main {
 }
 
 @media (min-width: 1025px) {
-    body {
-        background: blue;
-    }
-
     .bg-pattern-mobile {
         display: none;
     }
+
+    main .faq h2 {
+        display: none;
+    }
+
+    main .faq h1 {
+        display: block;
+    }
 }
+
+/* MEDIA QUERIES | END */
