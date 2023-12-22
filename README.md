@@ -4,4 +4,4 @@
 
 -   Technologies Used: HTML5, CSS3, Javascript
 
--   My Solution -> [here](https://aussenseiter13.github.io/fontend-mentor-faq-accordion/)
+-   My Solution -> [here](https://aussenseiter13.github.io/frontend-mentor-faq-accordion/)
